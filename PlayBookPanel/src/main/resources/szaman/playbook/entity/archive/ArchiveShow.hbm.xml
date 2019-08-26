@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-16 02:39:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="szaman.playbook.entity.archive.ArchiveShow" table="archive_show" optimistic-lock="version">
+        <id name="showId" type="int">
+            <column name="show_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="price" type="float">
+            <column name="price" precision="8" scale="8" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="13" not-null="true" />
+        </property>
+        <property name="startHour" type="string">
+            <column name="start_hour" length="100" not-null="true" />
+        </property>
+        <property name="length" type="int">
+            <column name="length" not-null="true" />
+        </property>
+        <property name="slotsLeft" type="int">
+            <column name="slots_left" not-null="true" />
+        </property>
+        <property name="playName" type="string">
+            <column name="play_name" length="100" not-null="true" />
+        </property>
+        <property name="theatreAndAuditoriumData" type="string">
+            <column name="theatre_and_auditorium_data" length="100" not-null="true" />
+        </property>
+        <property name="deleteDate" type="string">
+            <column name="delete_date" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

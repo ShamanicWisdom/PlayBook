@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-16 02:39:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="szaman.playbook.entity.archive.ArchiveReservation" table="archive_reservation" optimistic-lock="version">
+        <id name="reservationId" type="int">
+            <column name="reservation_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="accountData" type="string">
+            <column name="account_data" length="100" not-null="true" />
+        </property>
+        <property name="showData" type="string">
+            <column name="show_data" length="10" not-null="true" />
+        </property>
+        <property name="noSlots" type="int">
+            <column name="no_slots" not-null="true" />
+        </property>
+        <property name="slotsId" type="string">
+            <column name="slots_id" length="200" not-null="true" />
+        </property>
+        <property name="noNormal" type="int">
+            <column name="no_normal" not-null="true" />
+        </property>
+        <property name="noHalf" type="int">
+            <column name="no_half" not-null="true" />
+        </property>
+        <property name="price" type="float">
+            <column name="price" precision="8" scale="8" not-null="true" />
+        </property>
+        <property name="deleteDate" type="string">
+            <column name="delete_date" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

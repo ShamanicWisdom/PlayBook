@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" styleClass="background" stylesheets="@../../../../../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szaman.playbook.view.menu.show.reservation.ReservationDatabaseController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="851.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="35.0" prefWidth="165.0" text="Powrót" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="35.0" />
+      <TableView fx:id="reservationDatabaseTable" layoutX="400.0" layoutY="250.0" prefHeight="499.0" prefWidth="452.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="120.0">
+        <columns>
+          <TableColumn fx:id="reservationIdColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="ID" />
+          <TableColumn fx:id="noSlotsColumn" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Ilość Miejsc" />
+            <TableColumn fx:id="slotsIdColumn" maxWidth="225.0" minWidth="225.0" prefWidth="225.0" text="ID Miejsc" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="523.0" layoutY="152.0" maxHeight="410.0" maxWidth="450.0" minHeight="410.0" minWidth="450.0" prefHeight="410.0" prefWidth="450.0" style="-fx-border-color: white;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="171.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="277.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="noNormalLabel" maxHeight="72.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="72.0" prefWidth="250.0" styleClass="label-table-content" text=" " GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label fx:id="showDataLabel" maxHeight="94.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="94.0" prefWidth="250.0" styleClass="label-semi-small-text" text=" " wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin></Label>
+            <Label alignment="CENTER_RIGHT" maxHeight="35.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" prefHeight="35.0" prefWidth="150.0" styleClass="label-table-content" text="Dane Seansu" GridPane.halignment="RIGHT">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
+            <Label alignment="CENTER_RIGHT" maxHeight="71.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" prefHeight="71.0" prefWidth="150.0" styleClass="label-table-content" text="Liczba Miejsc" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
+            <Label alignment="CENTER_RIGHT" maxHeight="35.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" prefHeight="35.0" prefWidth="150.0" styleClass="label-table-content" text="ID Miejsc" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
+            <Label alignment="CENTER_RIGHT" maxHeight="35.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" prefHeight="35.0" prefWidth="150.0" styleClass="label-table-content" text="Bilety Normalne" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
+            <Label fx:id="accountDataLabel" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="35.0" prefWidth="250.0" styleClass="label-table-content" text=" " GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" maxHeight="58.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" prefHeight="58.0" prefWidth="150.0" styleClass="label-semi-small-text" text="Dane Rezerwującego" textAlignment="RIGHT" wrapText="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="noSlotsLabel" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="35.0" prefWidth="250.0" styleClass="label-table-content" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" maxHeight="35.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" prefHeight="35.0" prefWidth="150.0" styleClass="label-table-content" text="Bilety Ulgowe" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label alignment="CENTER_RIGHT" maxHeight="35.0" maxWidth="150.0" minHeight="35.0" minWidth="150.0" prefHeight="35.0" prefWidth="150.0" styleClass="label-table-content" text="Koszt Rezerwacji" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="noHalfLabel" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="35.0" prefWidth="250.0" styleClass="label-table-content" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="priceLabel" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="35.0" prefWidth="250.0" styleClass="label-table-content" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="showSlots" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleShowSpecific" prefHeight="35.0" prefWidth="165.0" text="Wyświetl na Sali" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+            <TextArea fx:id="slotsIdTextArea" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="523.0" layoutY="117.0" maxHeight="35.0" minHeight="30.0" prefHeight="35.0" prefWidth="238.0" styleClass="label-table-title" text="Dane rezerwacji:">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Label>
+      <Button fx:id="editButton" alignment="CENTER" contentDisplay="CENTER" layoutX="761.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="35.0" prefWidth="105.0" text="Edytuj" AnchorPane.rightAnchor="142.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="883.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="35.0" prefWidth="105.0" text="Usuń" AnchorPane.rightAnchor="27.0" />
+      <Label layoutX="308.0" layoutY="27.0" styleClass="label-title" text="Baza Danych Rezerwacji" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" alignment="CENTER" contentDisplay="CENTER" layoutX="642.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="35.0" prefWidth="105.0" text="Dodaj" AnchorPane.rightAnchor="257.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="523.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleShowAll" prefHeight="35.0" prefWidth="105.0" text="Pokaż Salę" />
+   </children>
+</AnchorPane>

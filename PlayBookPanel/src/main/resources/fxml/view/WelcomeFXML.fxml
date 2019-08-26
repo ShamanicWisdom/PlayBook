@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" styleClass="background" stylesheets="@../../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szaman.playbook.view.WelcomeController">
+    <children>
+        
+        <Button fx:id="login" alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="283.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="35.0" prefWidth="165.0" text="Zaloguj się!" />
+            
+        <Button fx:id="about" alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleAbout" prefHeight="35.0" prefWidth="165.0" text="O mnie" />
+            
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" prefWidth="165.0" text="Wyjście" />
+      <Label fx:id="versionInformer" layoutX="821.0" layoutY="655.0" prefHeight="31.0" prefWidth="165.0" styleClass="label-default" text="Wersja" />
+      <Label fx:id="connectionInformer" layoutX="821.0" layoutY="624.0" prefHeight="31.0" prefWidth="165.0" styleClass="label-connection-informer" text="Tryb">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="128.0" layoutY="108.0" styleClass="label-title" text="Panel Administracyjny Systemu PlayBook" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" />
+      
+    </children>
+    
+</AnchorPane>

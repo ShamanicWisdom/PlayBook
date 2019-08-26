@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-16 02:39:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="szaman.playbook.entity.Show" table="show" optimistic-lock="version">
+        <id name="showId" type="int">
+            <column name="show_id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="auditorium" class="szaman.playbook.entity.Auditorium" fetch="select">
+            <column name="auditorium_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="play" class="szaman.playbook.entity.Play" fetch="select">
+            <column name="play_id" not-null="true" />
+        </many-to-one>
+        <property name="price" type="float">
+            <column name="price" precision="8" scale="8" not-null="true" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="13" not-null="true" />
+        </property>
+        <property name="startHour" type="string">
+            <column name="start_hour" length="100" not-null="true" />
+        </property>
+        <property name="length" type="int">
+            <column name="length" not-null="true" />
+        </property>
+        <property name="slotsLeft" type="int">
+            <column name="slots_left" not-null="true" />
+        </property>
+        <set name="reservations" table="reservation" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="show_id" not-null="true" />
+            </key>
+            <one-to-many class="szaman.playbook.entity.Reservation" />
+        </set>
+    </class>
+</hibernate-mapping>

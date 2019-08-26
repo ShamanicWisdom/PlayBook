@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- Lista Serwletow-->
+    <!-- Logowanie do serwisu-->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>szaman.playbook.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <!-- Wylogowanie z serwisu-->
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>szaman.playbook.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <!-- Rejestracja w serwisie-->
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>szaman.playbook.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <!-- Profil uzytkownika-->
+    <servlet>
+        <servlet-name>Profile</servlet-name>
+        <servlet-class>szaman.playbook.profile.Profile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/Profile</url-pattern>
+    </servlet-mapping>
+    <!-- Edycja profilu uzytkownika-->
+    <servlet>
+        <servlet-name>EditProfile</servlet-name>
+        <servlet-class>szaman.playbook.profile.EditProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditProfile</servlet-name>
+        <url-pattern>/EditProfile</url-pattern>
+    </servlet-mapping>
+    <!-- Potwierdzenie edycji profilu uzytkownika-->
+    <servlet>
+        <servlet-name>ConfirmEditProfile</servlet-name>
+        <servlet-class>szaman.playbook.profile.ConfirmEditProfile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfirmEditProfile</servlet-name>
+        <url-pattern>/ConfirmEditProfile</url-pattern>
+    </servlet-mapping>
+    <!-- Reset hasla do konta uzytkownika-->
+    <servlet>
+        <servlet-name>ChangePassword</servlet-name>
+        <servlet-class>szaman.playbook.profile.ChangePassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangePassword</servlet-name>
+        <url-pattern>/ChangePassword</url-pattern>
+    </servlet-mapping>
+    <!-- Usuwanie konta uzytkownika-->
+    <servlet>
+        <servlet-name>DeleteAccount</servlet-name>
+        <servlet-class>szaman.playbook.profile.DeleteAccount</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteAccount</servlet-name>
+        <url-pattern>/DeleteAccount</url-pattern>
+    </servlet-mapping>
+    <!-- Wyswietlenie repertuaru-->
+    <servlet>
+        <servlet-name>ShowRepertoire</servlet-name>
+        <servlet-class>szaman.playbook.repertoire.ShowRepertoire</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowRepertoire</servlet-name>
+        <url-pattern>/ShowRepertoire</url-pattern>
+    </servlet-mapping>
+    <!-- Wyswietlenie danych sztuki-->
+    <servlet>
+        <servlet-name>PlayDescription</servlet-name>
+        <servlet-class>szaman.playbook.repertoire.PlayDescription</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlayDescription</servlet-name>
+        <url-pattern>/PlayDescription</url-pattern>
+    </servlet-mapping>
+    <!-- Wyswietlenie danych sali-->
+    <servlet>
+        <servlet-name>ShowAuditorium</servlet-name>
+        <servlet-class>szaman.playbook.repertoire.ShowAuditorium</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowAuditorium</servlet-name>
+        <url-pattern>/ShowAuditorium</url-pattern>
+    </servlet-mapping>
+    <!-- Wyswietlenie danych finalnych rezerwacji-->
+    <servlet>
+        <servlet-name>FurtherReservation</servlet-name>
+        <servlet-class>szaman.playbook.repertoire.FurtherReservation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FurtherReservation</servlet-name>
+        <url-pattern>/FurtherReservation</url-pattern>
+    </servlet-mapping>
+    <!-- Finalizowanie rezerwacji-->
+    <servlet>
+        <servlet-name>FinallizeReservation</servlet-name>
+        <servlet-class>szaman.playbook.repertoire.FinallizeReservation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FinallizeReservation</servlet-name>
+        <url-pattern>/FinallizeReservation</url-pattern>
+    </servlet-mapping>
+    <!-- Wyslanie rezerwacji do bazy danych-->
+    <servlet>
+        <servlet-name>PushReservationToDatabase</servlet-name>
+        <servlet-class>szaman.playbook.repertoire.PushReservationToDatabase</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PushReservationToDatabase</servlet-name>
+        <url-pattern>/PushReservationToDatabase</url-pattern>
+    </servlet-mapping>
+    <!-- Anulowanie rezerwacji-->
+    <servlet>
+        <servlet-name>CancelReservation</servlet-name>
+        <servlet-class>szaman.playbook.repertoire.CancelReservation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelReservation</servlet-name>
+        <url-pattern>/CancelReservation</url-pattern>
+    </servlet-mapping>
+    <!-- Timeout-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

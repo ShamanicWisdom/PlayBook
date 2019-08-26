@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" styleClass="background" stylesheets="@../../../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szaman.playbook.view.menu.MenuController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="821.0" layoutY="607.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="35.0" prefWidth="165.0" text="Wyloguj się" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="821.0" layoutY="651.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" prefWidth="165.0" text="Wyjście" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="417.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleAccounts" prefHeight="35.0" prefWidth="165.0" text="Użytkownicy" AnchorPane.topAnchor="231.0" />
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="650.0" layoutY="112.0" prefHeight="35.0" prefWidth="300.0" styleClass="label-default" text="Witaj, Name!" wrapText="true" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleTheatres" prefHeight="35.0" prefWidth="165.0" text="Teatry" AnchorPane.topAnchor="281.0" />
+      <Label alignment="CENTER" layoutX="401.0" layoutY="179.0" prefHeight="35.0" prefWidth="200.0" styleClass="label-default" text="Zarządzaj danymi:" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="417.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleArchive" prefHeight="35.0" prefWidth="165.0" text="Archiwum" AnchorPane.topAnchor="431.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="333.0" mnemonicParsing="false" onAction="#handlePlays" prefHeight="35.0" prefWidth="165.0" text="Sztuki" AnchorPane.topAnchor="331.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleShows" prefHeight="35.0" prefWidth="165.0" text="Seanse" AnchorPane.topAnchor="381.0" />
+      <Label alignment="CENTER" layoutX="55.0" layoutY="34.0" styleClass="label-title" text="Panel Administracyjny Systemu Playbook" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

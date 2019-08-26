@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-16 02:39:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="szaman.playbook.entity.archive.ArchiveAccount" table="archive_account" optimistic-lock="version">
+        <id name="accountId" type="int">
+            <column name="account_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="surname" type="string">
+            <column name="surname" length="50" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="30" not-null="true" />
+        </property>
+        <property name="phoneNumber" type="java.lang.Integer">
+            <column name="phone_number" />
+        </property>
+        <property name="role" type="string">
+            <column name="role" length="20" not-null="true" />
+        </property>
+        <!--<property name="deleteDate" type="date">
+            <column name="delete_date" length="13" not-null="true" />
+        </property>-->
+        <property name="deleteDate" type="string">
+            <column name="delete_date" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/newBase</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.default_schema">public</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <mapping resource="szaman/playbook/entity/Play.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/Theatre.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/Show.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/Reservation.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/Auditorium.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/Account.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/archive/ArchiveAccount.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/archive/ArchivePlay.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/archive/ArchiveTheatre.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/archive/ArchiveAuditorium.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/archive/ArchiveShow.hbm.xml"/>
+        <mapping resource="szaman/playbook/entity/archive/ArchiveReservation.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

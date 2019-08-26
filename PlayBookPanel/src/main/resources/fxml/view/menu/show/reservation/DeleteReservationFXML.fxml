@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="450.0" maxWidth="475.0" minHeight="450.0" minWidth="475.0" prefHeight="450.0" prefWidth="475.0" styleClass="background" stylesheets="@../../../../../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szaman.playbook.view.menu.show.reservation.DeleteReservationController">
+   <children>
+      <Label alignment="CENTER" layoutX="11.0" layoutY="28.0" prefHeight="51.0" prefWidth="349.0" styleClass="label-dialog-title" text="Usunięcie Rezerwacji" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="5.0" layoutY="155.0" prefHeight="147.0" prefWidth="465.0">
+         <children>
+            <Label styleClass="label-table-content" text="Hasło" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
+            <Label styleClass="label-table-content" text="Powtórz hasło" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Label>
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></PasswordField>
+            <PasswordField fx:id="confirmPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></PasswordField>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="333.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="273.0" layoutY="351.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCancel" prefHeight="35.0" prefWidth="135.0" text="Anuluj" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="75.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="109.0" layoutY="351.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleOk" prefHeight="35.0" prefWidth="135.0" text="Akceptuj" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="75.0" />
+      <Label alignment="CENTER" layoutX="81.0" layoutY="80.0" prefHeight="17.0" prefWidth="313.0" text="Ostrzeżenie!" textFill="RED" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+      <Label alignment="CENTER" layoutX="81.0" layoutY="97.0" prefHeight="17.0" prefWidth="313.0" styleClass="label-small-text" text="Usunięcie rezerwacji jest permanentne! " AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+      <Label alignment="CENTER" layoutX="82.0" layoutY="114.0" styleClass="label-small-text" text="Po zatwierdzeniu operacja nie będzie możliwa do cofnięcia." AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+      <Label alignment="CENTER" layoutX="81.0" layoutY="131.0" prefHeight="17.0" prefWidth="313.0" styleClass="label-small-text" text="Wpisz swoje hasło, by kontynuować." AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" />
+   </children>
+</AnchorPane>

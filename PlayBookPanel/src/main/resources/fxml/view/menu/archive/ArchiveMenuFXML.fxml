@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="700.0" maxWidth="1000.0" minHeight="700.0" minWidth="1000.0" prefHeight="700.0" prefWidth="1000.0" styleClass="background" stylesheets="@../../../../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="szaman.playbook.view.menu.archive.ArchiveMenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="395.0" layoutY="14.0" prefHeight="47.0" prefWidth="900.0" styleClass="label-title" text="ARCHIWUM" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleArchiveAccounts" prefHeight="35.0" prefWidth="165.0" text="Użytkownicy" />
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="741.0" layoutY="86.0" prefHeight="35.0" prefWidth="300.0" styleClass="label-default" text="Witaj, Name!" wrapText="true" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="266.0" mnemonicParsing="false" onAction="#handleArchiveTheatres" prefHeight="35.0" prefWidth="165.0" text="Teatry" AnchorPane.topAnchor="281.0" />
+      <Label alignment="CENTER" layoutX="404.0" layoutY="185.0" prefHeight="35.0" prefWidth="193.0" styleClass="label-default" text="Przeglądaj:" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="896.0" layoutY="651.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="35.0" prefWidth="165.0" text="Powrót" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="35.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleArchiveAuditoriums" prefHeight="35.0" prefWidth="165.0" text="Sale" AnchorPane.topAnchor="331.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleArchivePlays" prefHeight="35.0" prefWidth="165.0" text="Sztuki" AnchorPane.topAnchor="381.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleArchiveShows" prefHeight="35.0" prefWidth="165.0" text="Seanse" AnchorPane.topAnchor="431.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="418.0" layoutY="476.0" mnemonicParsing="false" onAction="#handleArchiveReservations" prefHeight="35.0" prefWidth="165.0" text="Rezerwacje" AnchorPane.topAnchor="481.0" />
+   </children>
+</AnchorPane>
