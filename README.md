@@ -45,3 +45,15 @@ Użytkownik może anulować swoją rezerwację lub modyfikować ją.
 Maksymalna liczba miejsc wybranych na jedną rezerwację to 6.
 
 Użytkownik po wybraniu miejsc może określić ilość i typ biletów, które rezerwuje (wybór między normalnymi, a ulgowymi - z 50% zniżką).
+
+## Technologie:
+- PlayBook Panel:
+  - Java,
+  - JavaFX (GUI),
+  - Hibernate,
+  - CSS,
+- PlayBook Panel:
+  - JavaEE (JSP + Servlety),
+  - Hibernate,
+  - CSS,
+- Baza danych PostgreSQL 9.6.
